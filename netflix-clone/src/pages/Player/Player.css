@@ -1,0 +1,42 @@
+.player {
+    background-color: black !important;
+    width: 100%;
+    height: 100vh;
+}
+
+.back-icon img {
+    cursor: pointer;
+}
+
+.trailer-video {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.video {
+    height: 30vh;
+    width: 100%;
+}
+
+
+
+
+@media (min-width: 640px) {
+    .video {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .video {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .video {
+        height: 70vh;
+    }
+}

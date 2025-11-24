@@ -1,0 +1,18 @@
+.cardss img{
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.titleCards {
+    padding-block: 3rem;
+    background-color: transparent;
+}
+
+
+.movie-cards {
+    overflow-x: scroll;
+}
+
+.movie-cards::-webkit-scrollbar {
+    display: none;
+}
