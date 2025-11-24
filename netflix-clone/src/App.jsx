@@ -3,25 +3,11 @@ import { Home } from './pages/Home/Home'
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import { Login } from '../src/pages/Login/Login'
 import { Player } from '../src/pages/Player/Player'
-import { onAuthStateChanged } from 'firebase/auth'
-import { auth } from './firebase'
 import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
 
   const navigate = useNavigate()
-
-  useEffect(() => {
-    onAuthStateChanged(auth, async (user) => {
-      if (user) {
-        console.log('Logged In')
-        navigate('/')
-      } else {
-        console.log('Logged Out')
-        navigate('/login')
-      }
-    })
-  }, [])
 
   return (
     <div className='s'>

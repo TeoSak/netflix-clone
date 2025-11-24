@@ -3,7 +3,7 @@ import './Navbar.css'
 import logo from '../../../assets/logo.png'
 import search from '../../../assets/search_icon.svg'
 import profile from '../../../assets/profile_img.png'
-import { logout } from '../../firebase'
+
 
 export const Navbar = () => {
   return (
@@ -51,7 +51,7 @@ export const Navbar = () => {
                     <a className='nav-link'>Children</a>
                   </li>
                   <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a className="nav-link dropdown-toggle text-white" href="/login" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <img src={profile} onClick={() => { logout() }} alt="profile" />
                     </a>
                     <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
