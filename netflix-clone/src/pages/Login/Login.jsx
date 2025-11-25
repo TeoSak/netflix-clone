@@ -31,8 +31,8 @@ export const Login = () => {
 
     const url =
       signState === "Sign In"
-        ? "http://localhost:5000/login"
-        : "http://localhost:5000/signup";
+        ? "https://netflix-clone-1-9tol.onrender.com/login"
+        : "https://netflix-clone-1-9tol.onrender.com/signup";
 
     try {
       const res = await fetch(url, {

@@ -17,7 +17,7 @@ export const Player = () => {
   })
 
   useEffect(() => {
-    fetch(`http://localhost:5000/movie/${id}/videos`)
+    fetch(`https://netflix-clone-1-9tol.onrender.com/movie/${id}/videos`)
       .then(res => res.json())
       .then(data => {
         if (data.results && data.results.length > 0) {

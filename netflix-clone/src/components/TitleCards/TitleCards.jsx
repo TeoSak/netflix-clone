@@ -8,7 +8,7 @@ export const TitleCards = ({ title, category }) => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/movies/${category ? category : "now_playing"}`)
+    fetch(`https://netflix-clone-1-9tol.onrender.com/movies/${category ? category : "now_playing"}`)
       .then(res => res.json())
       .then(data => {
         console.log("API DATA:", data.results);
